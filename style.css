@@ -4,7 +4,7 @@
     font-family:"Parkinsans", sans-serif;
     
 }
-body{
+main, head{
   
   background-color: rgb(246,248,255);
   width: 80vw;
@@ -274,9 +274,7 @@ li{
     text-decoration: underline;
    
 }
-/* .par2{
-    font-size: 1.6em;
-} */
+
 
 
 
