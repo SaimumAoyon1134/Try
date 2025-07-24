@@ -6,7 +6,7 @@
 }
 body{
   
-    background-color: rgb(246,248,255);
+  background-color: rgb(246,248,255);
   width: 80vw;
   margin: 0px auto;
   
@@ -62,7 +62,8 @@ body{
     font-weight: 900;
 }
 .box{
-    height: 80vh;
+    margin-top: 8vh;
+    height: 70vh;
     background-color: #f8f9fc; 
     background-image: 
         linear-gradient(to right, rgba(255, 0, 0, 0.1) 1px, transparent 1px),
@@ -82,11 +83,23 @@ body{
     font-size: 4rem;
     font-weight: bolder;
 }
+.boro1{
+    font-size: 3rem;
+    font-weight: bolder;
+    text-align: center;
+}
 .sp{
     color: #E95A08;
 }
 .choto{
     font-weight: 400;
+    color: gray;
+}
+.choto1{
+    width:65vw;
+    font-weight: 400;
+    justify-content: center;
+    color: gray;
 }
 .lekha{
     display: flex;
@@ -98,6 +111,15 @@ body{
     padding-left: 2%;
     padding-bottom: 2%;
 }
+.lekha1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    
+}
 .cb{
     align-items: end;
 }
@@ -105,6 +127,54 @@ body{
     width: 100%;
     height: 50%;
 }
+.plants{
+    margin-top: 8vh;
+}
+.chobi{
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+}
+.ekta{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.nam{
+    font-size: 1.2rem;
+}
+.tit{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.btn{
+    background-color:  #E95A08;
+    width: 100%;
+    height: 2.5rem;
+    color: #f8f9fc;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 600px) {
     .nav_left{
         width:40%;
@@ -127,11 +197,12 @@ body{
         height: 30%;
      }
      .box{
+        height: auto;
         background-image: none;
         flex-direction: column-reverse;
      }
      .lekha{
-        width:80%;
+        width:100%;
     }
     .boro{
         font-size: 2rem;
@@ -146,5 +217,11 @@ body{
      .img{
         width: 100%;
         height: 100%;
+    }
+    .chobi{
+
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
     }
   }
