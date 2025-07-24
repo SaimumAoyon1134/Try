@@ -4,7 +4,7 @@
     font-family:"Parkinsans", sans-serif;
     
 }
-main, head{
+header,main{
   
   background-color: rgb(246,248,255);
   width: 80vw;
@@ -274,6 +274,65 @@ li{
     text-decoration: underline;
    
 }
+footer{
+    margin-top: 4vh;
+    width: 90vw;
+    margin: auto auto;
+}
+.div1{
+    height:50vh;
+    margin-top: 8vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('/images/news-letter-bg.png');
+    width: 90vw;
+    background-size:cover;
+}
+.p3{
+    text-align: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: #f8f9fc;
+    font-weight: 800;
+}
+.indiv{
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: row;
+    width:60vw;
+    height:3rem;
+}
+input{
+    background-color: #f8f9fc;
+    width: 70%;
+}
+.btn1{
+    width:30%;
+    height:3rem;
+}
+
+
+
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px;
+}
+
+.div4{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    justify-content: end;
+
+}
+.div2{
+    margin-top:8vh;
+}
 
 
 
@@ -291,12 +350,27 @@ li{
 
 
 
-
-
-
-
-
-
+@media screen and (min-width:601px){
+    .div2{
+        display:grid;
+        grid-template-columns: 33% 33% 33%;
+      
+       
+        
+    }
+    .poto{
+        width: 100%;
+    }
+    .div22 ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, auto);
+        gap: 1vw;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+}  
 @media screen and (max-width: 600px) {
     .nav_left{
         width:40%;
@@ -390,5 +464,17 @@ li{
         font-size: 1em;
     }
     
-  
+    .div4{
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        justify-content:flex-start;
+    
+    }
+    .div22{
+        margin-top: 3vh;
+    }
+    .sb{
+        font-size: 0.7em;
+    }
   }
