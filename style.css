@@ -23,10 +23,7 @@ body{
     width:100%;
  
  }
-/* .image{
-   width:50%;
-   height: 50%;
-} */
+
 .nav_left{
     width:20%;
 }
@@ -211,6 +208,83 @@ li{
 .imgmarka{
     width: 100%;
 }
+.latest{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 8vh;
+}
+.ar1, .ar2, .ar3 {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display: flex;
+    text-align: center;
+    color: #f8f9fc;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3%;
+    font-weight: 700;
+
+    flex-direction: column;
+}
+
+.ar3 {
+    font-size: 1.5em;
+}
+
+
+.ar1::before,
+.ar2::before,
+.ar3::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.3); 
+    z-index: 1;
+    border-radius: 3%;
+}
+
+
+.arin{
+    position: relative;
+    z-index: 2;
+}
+.ar1{
+    grid-area: ar1;
+}
+.ar2{
+    grid-area: ar2;
+}
+.ar3{
+    grid-area: ar3;
+}
+.gimg{
+    margin-top: 4vh;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 25vh 25vh;
+    gap:1.4em;
+    grid-template-areas:
+    "ar1 ar3 ar3"
+    "ar2 ar3 ar3"
+}
+.gimg a{
+    text-decoration: underline;
+   
+}
+/* .par2{
+    font-size: 1.6em;
+} */
+
+
+
+
+
+
+
+
 
 
 
@@ -303,6 +377,20 @@ li{
         padding-left: 2em;
        
     }
-   
+    .gimg{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(3,12em);
+        grid-template-areas:
+    "ar1" "ar2" "ar3";
+    }
+    .par2 lar2{
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .ar3 {
+        font-size: 1em;
+    }
+    
   
   }
