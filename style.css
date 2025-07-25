@@ -344,7 +344,10 @@ input{
     margin-top:8vh;
 }
 
-
+.btn:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
 
 
 
