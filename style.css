@@ -212,8 +212,18 @@ li{
     margin-top: -4.5rem;
     margin-right: -4.5rem;
 }
+@keyframes rotate360 {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
 .imgmarka{
     width: 100%;
+    animation: rotate360 15s linear infinite;
+   
 }
 .latest{
     display: flex;
